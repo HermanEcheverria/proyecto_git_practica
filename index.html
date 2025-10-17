@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Perfiles del Equipo</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Encabezado principal -->
+    <header class="hero">
+        <div class="container">
+            <h1 class="hero-title">🎓 Galería de Perfiles del Equipo</h1>
+            <p class="hero-subtitle">Proyecto de Práctica con Git y GitHub</p>
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-number" id="team-count">0</span>
+                    <span class="stat-label">Miembros del Equipo</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección de instrucciones rápidas -->
+    <section class="quick-info">
+        <div class="container">
+            <h2>💡 ¿Cómo Participar?</h2>
+            <div class="steps">
+                <div class="step">
+                    <i class="fas fa-code-branch"></i>
+                    <h3>1. Crea tu Branch</h3>
+                    <p>Fork el repo y crea un branch con tu nombre</p>
+                </div>
+                <div class="step">
+                    <i class="fas fa-user-plus"></i>
+                    <h3>2. Agrega tu Perfil</h3>
+                    <p>Crea tu archivo JSON en la carpeta profiles/</p>
+                </div>
+                <div class="step">
+                    <i class="fas fa-code-pull-request"></i>
+                    <h3>3. Abre un Pull Request</h3>
+                    <p>Envía tus cambios para revisión</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería de perfiles -->
+    <section class="gallery">
+        <div class="container">
+            <h2 class="section-title">👥 Nuestro Equipo</h2>
+            <div id="profiles-container" class="profiles-grid">
+                <!-- Los perfiles se cargarán dinámicamente aquí -->
+            </div>
+            
+            <!-- Mensaje cuando no hay perfiles -->
+            <div id="empty-message" class="empty-message">
+                <i class="fas fa-users"></i>
+                <p>Aún no hay perfiles agregados. ¡Sé el primero en agregar el tuyo!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>🚀 Proyecto de práctica con Git y GitHub | Creado con ❤️ para aprender</p>
+            <p class="footer-note">Lee el <a href="README.md" target="_blank">README.md</a> para instrucciones completas</p>
+        </div>
+    </footer>
+
+    <!-- Script principal -->
+    <script src="js/main.js"></script>
+</body>
+</html>
