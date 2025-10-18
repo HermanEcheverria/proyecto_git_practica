@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
 async function cargarPerfiles() {
     // Lista de archivos de perfil a cargar
     const archivosPerfiles = [
+        'andres-rojas.json',
     ];
 
     const contenedor = document.getElementById('profiles-container');
